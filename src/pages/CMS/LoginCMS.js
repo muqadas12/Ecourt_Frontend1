@@ -83,7 +83,7 @@ class Form extends Component {
       password: this.state.password,
       name: this.state.name
     }
-    axios.post('http://localhost:2000/api/users/signUp', data).then(res => {
+    axios.post('https://backendecourt2.herokuapp.com/api/users/signUp', data).then(res => {
       alert(`You are signUp as ${data.name}`)
       window.location = "http://localhost:3000/AdminLogin";
 
